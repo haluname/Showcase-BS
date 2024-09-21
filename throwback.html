@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleThrowback.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="background">
+            <img src="img/vma2001bg.jpg">
+        </div>
+        <div class="yearLogo">
+            <img src="img/britneyLogo2001.png">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+         document.addEventListener('wheel', function(e) {
+            if (e.ctrlKey) {
+                e.preventDefault(); // Impedisce lo zoom tramite rotellina + Ctrl
+            }
+        }, { passive: false });
+
+        // Blocca zoom tramite combinazioni di tasti (Ctrl +, Ctrl -, Ctrl 0)
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && (e.key === '+' || e.key === '-' || e.key === '0')) {
+                e.preventDefault(); // Blocca Ctrl +, Ctrl -, Ctrl 0
+            }
+        });
+
+        // Disabilita il pinch-to-zoom sui dispositivi touch
+        document.addEventListener('gesturestart', function(e) {
+            e.preventDefault(); // Blocca pinch-to-zoom all'inizio
+        });
+
+        document.addEventListener('gesturechange', function(e) {
+            e.preventDefault(); // Blocca pinch-to-zoom durante l'evento
+        });
+
+        document.addEventListener('gestureend', function(e) {
+            e.preventDefault(); // Blocca pinch-to-zoom alla fine
+        });
+    </script>
+</body>
+</html>

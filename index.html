@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -14,7 +15,13 @@
   <body>
     <header>
       <div class="overlay">
-        <h1>The Britney Spears' Showcase</h1>
+        <h1 id="title">The Britney Spears' Showcase</h1>
+        <h3><a href="throwback.html">Throwback</a>&nbsp;&nbsp;&nbsp;&nbsp;<a>Showcase</a></h3>
+      </div>
+      <div class="socials">
+        <a href="https://www.youtube.com/channel/UCgffc95YDBlkGrBAJUHUmXQ"><img src="img/yt.png"></a>
+        <a href="https://www.instagram.com/britneyspears/"><img src="img/ig.png"></a>
+        <a href="https://open.spotify.com/intl-it/artist/26dSoYclwsYLMAKD3tpOr4"><img src="img/st.png"></a>
       </div>
     </header>
 
@@ -29,5 +36,10 @@
     </main>
     <footer></footer>
     <script src="js/script.js"></script>
+    <script>
+      document.fonts.ready.then(function() {
+          document.body.classList.add('font-loaded');
+      });
+  </script>
   </body>
 </html>

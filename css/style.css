@@ -1,5 +1,12 @@
-*{padding: 0; margin: 0; box-sizing: border-box;}
+*{padding: 0; margin: 0; box-sizing: border-box; }
 body{height: 100vh; background-color: #c394f8;}
+
+body {
+    visibility: hidden;
+}
+body.font-loaded {
+    visibility: visible;
+}
 header {
 	background: url('https://images.bauerhosting.com/legacy/media/5dd6/d6bf/27ff/0a0a/6779/9aa8/britney%20hold.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80');
 	text-align: center;
@@ -18,11 +25,12 @@ header .overlay{
 	padding: 76px;
 	color: #FFF;
 	text-shadow: 1px 1px 1px #333;
-  background-image: linear-gradient( 135deg, #c394f886 10%, #c394f84f 100%);
+  	background-image: linear-gradient( 135deg, #c394f886 10%, #c394f84f 100%);
 	
 }
 
-h1 {
+#title{
+	user-select: none;
     font-family: 'Bangers', cursive;
 	font-size: 80px;
 	margin-bottom: 30px;
@@ -47,3 +55,32 @@ button {
 button:hover{
 	cursor: pointer;
 }
+
+.socials{
+	position: absolute;
+	top: 25px;
+	right: 50px;
+	z-index: 11;
+	width: 200px;
+	height: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.socials img{
+	height: 40px;
+	width: 40px;
+}
+
+a{
+	user-select: none;
+	text-decoration: none;
+	color: white;
+	transition: all 0.7s;
+}
+
+a:hover{
+	color: #ea10db;
+}
+
