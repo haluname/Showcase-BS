@@ -19,6 +19,8 @@ body {
     position: relative;
 }
 
+
+
 .background::after {
     content: '';
     position: absolute;
@@ -127,7 +129,6 @@ body {
 
 .activeImage{
     transform: scale(1.3);
-
 }
 
 .slider-background{
