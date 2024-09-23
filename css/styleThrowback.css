@@ -15,7 +15,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: 50% 15%;
     position: relative;
 }
 
@@ -94,6 +94,14 @@ body {
 .showcaseImage {
     min-width: calc(100% / 3);    
     text-align: center;
+    height: 10px !important;
+}
+
+.showcaseImage img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .showcaseImage h3 {

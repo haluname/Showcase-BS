@@ -10,8 +10,8 @@ let showcaseData = [
 
     {
         "year": "1998",
-        "pic": "babyAlbum.jpg",
-        "title": "...Baby One More Time release",
+        "pic": "babyOneMoreTime.jpg",
+        "title": "...Baby One More Time debut",
         "description": "lorem",
         "logo": "britneyLogo1999.png", 
         "index" : 2
@@ -19,10 +19,10 @@ let showcaseData = [
 
      {
         "year": "2000",
-        "pic": "",
+        "pic": "oops.jpg",
         "title": "Oops!...I Did It Again",
         "description": "lorem",
-        "logo": "", 
+        "logo": "britneyLogo2000.png",
         "index" : 3
      },
 
@@ -37,29 +37,47 @@ let showcaseData = [
 
      {
         "year": "2002",
-        "pic": "",
+        "pic": "crossroads.jpeg",
         "title": "Crossroads",
         "description": "lorem",
-        "logo": "britneyLogo2002.png", 
+        "logo": "britneyLogo2001.png", 
         "index" : 5
      },
 
      {
         "year": "2002",
-        "pic": "",
+        "pic": "pepsi.jpeg",
         "title": "Taste The Victory",
         "description": "lorem",
-        "logo": "britneyLogo2002.png", 
+        "logo": "britneyLogo2001.png", 
         "index" : 6
      },
 
      {
         "year": "2003",
-        "pic": "",
-        "title": "The Onyx Hotel Tour",
+        "pic": "toxic.jpg",
+        "title": "Toxic",
         "description": "lorem",
         "logo": "britneyLogo2002.png", 
         "index" : 7
+     },
+
+     {
+        "year": "2004",
+        "pic": "onyx.jpg",
+        "title": "The Onyx Hotel Tour",
+        "description": "lorem",
+        "logo": "britneyLogo2002.png", 
+        "index" : 8
+     },
+
+     {
+        "year": "2009",
+        "pic": "circus.jpg",
+        "title": "Circus Era",
+        "description": "lorem",
+        "logo": "britneyLogo2008.png", 
+        "index" : 9
      },
  
 
