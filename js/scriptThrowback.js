@@ -216,5 +216,12 @@ window.onload = () => {
 };
 
 
-
+document.addEventListener('keydown', function(event) {
+    if (event.key === "ArrowLeft") {
+        prevBtn.click();
+    }
+    if (event.key === "ArrowRight") {
+        nextBtn.click();
+    }
+});
 
